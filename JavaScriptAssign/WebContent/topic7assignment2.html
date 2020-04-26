@@ -1,0 +1,38 @@
+<!DOCTYPE html>   
+<html>   
+    <head>  
+        <title></title> 
+    </head>  
+        
+    <body style = "text-align:center;">   
+    
+        <h1 style = "color:green;" >   
+            combine two lists  
+        </h1>   
+          <form>
+          
+        <p id="demo"></p>
+        
+            </form>
+        <script>  
+        var  a = [5,10,15];
+        
+        var b = ['A', 'B', 'C'];
+
+        
+          var l = a.length+b.length;
+          var r = [];
+          var j=0,k=0;
+          for(var i=0; i<l;i++) {
+            if(i%2==0) {
+              r[i]=a[j++];
+            } else {
+              r[i]=b[k++];
+            }
+          }
+          document.getElementById("demo").innerHTML =  r;
+        
+        	
+          
+        </script>  
+    </body>   

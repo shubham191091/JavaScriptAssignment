@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+var a=prompt("Enter first number");
+var b=prompt("Enter second number");
+var c=prompt("Enter third number");
+var d=prompt("Enter fourth number");
+var e=prompt("Enter fivth number");
+var box1=(parseInt(b),parseInt(c),parseInt(d),parseInt(e));
+var box2=(parseInt(a),parseInt(c),parseInt(d),parseInt(e));
+var box3=(parseInt(b),parseInt(a),parseInt(d),parseInt(e));
+var box4=(parseInt(b),parseInt(c),parseInt(a),parseInt(e));
+var box5=(parseInt(b),parseInt(c),parseInt(d),parseInt(a));
+if( parseInt(a)>box1)
+{window.alert("the greatest of "+a+" , "+b+" , "+c+" , "+d+" , "+e+" is "+a);
+}
+else
+if( parseInt(b)>box2)
+{window.alert("the greatest of "+a+" , "+b+" , "+c+" , "+d+" , "+e+" is "+b);
+}
+else
+if( parseInt(c)>box3)
+{window.alert("the greatest of "+a+" , "+b+" , "+c+" , "+d+" , "+e+" is "+c);
+}
+else
+if( parseInt(d)>box4)
+{window.alert("the greatest of "+a+" , "+b+" , "+c+" , "+d+" , "+e+" is "+d);
+}
+else
+if( parseInt(e)>box5)
+{window.alert("the greatest of "+a+" , "+b+" , "+c+" , "+d+" , "+e+" is "+e);
+}
+else
+{window.alert(+a+" , "+b+" , "+c+" , "+d+" , "+e+" are equal ");
+}
+</script>
+</body>
+</html>
+</html>

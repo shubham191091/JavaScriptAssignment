@@ -1,0 +1,41 @@
+<!DOCTYPE html>   
+<html>   
+    <head>  
+        <title></title> 
+    </head>  
+        
+    <body style = "text-align:center;">   
+    
+        <h1 style = "color:green;" >   
+            capitalize First Letter   
+        </h1>   
+          <form>
+          
+        <input id ="str" type="text" name="str"/>  
+        <button onclick="capitalize(document.getElementById('str').value);return false;">  
+            Click to capitalize 
+        </button>  
+        <p id="demo"></p>
+        <h3 id = "div" style="color: green"> 
+        </h3> 
+            </form>
+        <script>  
+        function capitalize(str) {
+        	
+        	   var splitStr = str.toLowerCase().split(' ');
+        	   for (var i = 0; i < splitStr.length; i++) {
+        	       // You do not need to check if i is larger than splitStr length, as your for does that for you
+        	       // Assign it back to the array
+        	       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        	   }
+        	   // Directly return the joined string
+        	  
+        	   text=splitStr.join(' ');
+        	   document.getElementById("demo").innerHTML = text;
+        	  
+        	}
+
+        	
+          
+        </script>  
+    </body>   

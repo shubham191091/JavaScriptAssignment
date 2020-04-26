@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>CD name: CD Publisher :CD price</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+var CD, text, fLen, i;
+CD = ["JumanJi","Chris",450];
+fLen = CD.length;
+
+text = "<ul>";
+var taxpercent= (CD[2]/10); 
+var totaltax =taxpercent + CD[2];
+alert("value of totaltax"+totaltax);
+var dis=Math.ceil(totaltax*3/100);
+alert("value of discount"+dis);
+var final_price=totaltax-dis;
+
+alert("value of final_price"+final_price);
+for (i = 0;i<CD.length-1; i++) {
+  text += "<li>" + CD[i] + "</li>";
+  
+}
+text += "</ul>";
+
+
+	document.getElementById("demo").innerHTML = text;
+	document.getElementById("demo2").innerHTML = final_price;
+
+</script>
+
+</body>
+</html>
